@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Verificador de teclas</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+	<div id="game">
+        <div id="mensagemInicial" style="display: none;">
+            <p>Essa demo não representa o jogo completo:</p>
+            <button onclick="initGame()">Iniciar</button>
+          </div>
+        <div id="mensagem" class="mensagem oculto">-10</div>
+<div id="results">
+    <div id="letter"></div>
+		
+    <div id="you-lose">Você errou!</div>
+    <div id="game-over">Game Over! Quer jogar novamente?</div>
+</div>
+        <div id="enemies">
+          
+            <img src="goblin.png" alt="monster">
+            <div id="monster-bar">
+                <div id="monster"></div>
+            </div>
+        </div>
+<div class="character">
+    <img src="Cavaleiro.jpg" class="imagem-circular">
+    <div id="life-bar">
+        <div id="life"></div>
+    </div>
+    
+    <button onclick="message()">Iniciar</button>
+    <div id="time-bar">
+        <div id="time"></div>
+    </div>
+</div>
+
+        
+	</div>
+
+	<script src="script.js"></script>
+</body>
+</html>
